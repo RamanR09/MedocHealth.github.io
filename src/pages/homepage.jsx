@@ -20,7 +20,8 @@ import f7 from "../resources/feature7.png";
 import f8 from "../resources/feature8.png";
 import hi1 from "../resources/Available on all devices.png";
 import hi2 from "../resources/A Complete Solution.png";
-
+// logo
+import logo from "../resources/medoc-black.png"
 import bt from "../resources/image-05-removebg-preview.png";
 import playbutton from "../resources/googleplay-grey.png";
 import fPlayButton from "../resources/googleplay-black.png";
@@ -92,6 +93,9 @@ function HomePage() {
         >
           {scrolled === false ? (
             <nav className={styles.navbarWhite} onMouseLeave={handleSidebar}>
+            <div className={styles.navleft}>
+              <img src={logo} alt="logo" className={styles.logo}/>
+            </div>
               <div className={styles.navright}>
                 <Link
                   className={styles.navbuttonWhite}
@@ -122,7 +126,7 @@ function HomePage() {
                 <Link
                   className={styles.navbuttonWhite}
                   // onClick={() => parallaxRef.current.scrollTo(18)}
-                  to="/blog"
+                  to="https://blog.medochealth.in/"
                 >
                   Blog
                 </Link>
@@ -581,20 +585,11 @@ function HomePage() {
 
         {/* BLOG SECTION NEEDS TO BE INTEGRATED */}
         {/* <ParallaxLayer offset={18} style={{ backgroundColor: "#EEEEEE" }}>
+
           <Blog />
         </ParallaxLayer> */}
 
-        {/* <ParallaxLayer offset={18} style={{ backgroundColor: "#EEEEEE" }}> */}
-
-          {/* <Blog /> */}
-        {/* </ParallaxLayer> */}
-
-
-        {/* <ParallaxLayer offset={18} style={{ backgroundColor: "#EEEEEE" }}> */}
-
-
-        <ParallaxLayer offset={19} style={{ backgroundColor: "#EEEEEE" }}>
-
+        <ParallaxLayer offset={18} style={{ backgroundColor: "#EEEEEE" }}>
           <div className={styles.contactus}>
             <h1>Looking for Support?</h1>
             <p>
@@ -641,7 +636,7 @@ function HomePage() {
             </form>
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={20} style={{ backgroundColor: "#EEEEEE" }}>
+        <ParallaxLayer offset={19} style={{ backgroundColor: "#EEEEEE" }}>
           <div className={styles.footer}>
             <div className={styles.footerflex}>
               <div className={styles.footercontb}>
